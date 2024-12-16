@@ -6,13 +6,13 @@
       "use": "@vercel/static"
     },
     {
-      "src": "vite.config.js",
+      "src": "package.json",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/index.html",
       "dest": "/index.html"
     }
   ]
