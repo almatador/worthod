@@ -5,17 +5,5 @@
       "src": "index.html",
       "use": "@vercel/static"
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "github": {
-    "enabled": true
-  }
+  ]
 }
