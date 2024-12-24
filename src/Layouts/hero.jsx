@@ -27,18 +27,17 @@ const Hero = () => {
                             gap: '0px',
                         }}
                     >
-                        <span className="font-Tajawal text-[32px] leading-[38.4px]">{/* نص الزر */}Build Your Digital Future Now</span>
+                        <span className="font-Tajawal text-[30px] leading-[38.4px]">{/* نص الزر */}Build Your Digital Future Now</span>
                     </a>
+                    
                 </div>
 
-            </div>
-
-            {/* الصورة */}
-            <div className="hidden md:block md:w-5/12">
-                <img className="w-full h-auto object-cover rounded-[56px_0_0_0]" src={Heroimage} alt="mockup" />
+                {/* الصورة */}
+                <div className="hidden md:block md:w-5/12">
+                    <img className="w-full h-auto object-cover rounded-[56px_0_0_0]" src={Heroimage} alt="mockup" />
+                </div>
             </div>
         </div>
-
     );
 };
 
