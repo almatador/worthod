@@ -6,18 +6,17 @@ import Pricing from '../../../Layouts/plan';
 import Services2 from '../../../Layouts/servies2';
 
 const Homepage = () => {
-
     return (
         <div>
             <Hero />
-            <div className='w-10'></div>
-            <Services/>
-            <div className='w-10'></div>
-            <Services2/>
-            <div className='w-10'></div>
+            <div className='my-20'></div> {/* مسافة 200 بيكسل */}
+            <Services />
+            <div className='my-20'></div> {/* مسافة 200 بيكسل */}
+            <Services2 />
+            <div className='my-20'></div> {/* مسافة 200 بيكسل */}
             <Project />
-            <div className='w-10'></div>
-            <Pricing/>
+            <div className='my-20'></div> {/* مسافة 200 بيكسل */}
+            <Pricing />
         </div>
     );
 };

@@ -7,7 +7,7 @@ const Hero = () => {
             <div className="max-w-screen-xl w-full px-4 py-6 mx-auto flex items-center justify-between">
                 {/* النص والمحتوى الرئيسي */}
                 <div className="w-full md:w-7/12 text-left">
-                    <h1 className="text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl mb-6">
+                    <h1 className="text-[500px] font-Tajawal leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl mb-6">
                         Worthod – Your Partner in Building a Digital Future with Confidence and Creativity
                     </h1>
                     <p className="text-gray-500 dark:text-gray-400 text-lg lg:text-xl mb-6">
