@@ -60,7 +60,7 @@ const Services2 = () => {
               </div>
             ))}
           </div>
-          <div className=" w-full md:w-5/12 flex justify-center items-center mb-10 lg:mb-0 bg-black">
+          <div className=" w-full md:w-5/12 flex justify-center items-center mb-10 lg:mb-0 ">
             <img src={serviceimage} alt="Service" className="rounded-lg shadow-lg " />
           </div>
 
