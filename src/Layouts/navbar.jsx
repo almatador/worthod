@@ -3,7 +3,7 @@ import Logo from './../../public/assets/Images/logo.png'; // Import your logo im
 
 const Navbar = () => {
     return (
-        <nav className="fixed top-0 left-0 w-full z-20 flex items-center justify-between py-6 px-20 bg-gradient-to-r from-[#120C1C] to-[#2A1845] rounded-lg shadow-md">
+        <nav className="fixed top-0 left-0 w-full z-20 flex items-center justify-between py-6 px-20 bg-gradient-to-r from-[#120C1C] to-[#3c255e] rounded-b-[56px] shadow-md">
             {/* الشعار */}
             <div className="flex">
                 <a href="/" className="flex items-center">
