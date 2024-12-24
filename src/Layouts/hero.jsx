@@ -15,27 +15,30 @@ const Hero = () => {
                         With a focus on quality and innovation, we help businesses strengthen their digital presence and achieve lasting success.
                         Start your journey today with our trusted digital solutions.
                     </p>
-                    {/* الأزرار */}
-                    <div className="flex space-x-4">
-                        <a
-                            href="#"
-                            className="inline-block rounded-lg bg-primary-700 px-6 py-3.5 text-center font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-                            style={{ background: 'linear-gradient(135.02deg, #7214FF -5.1%, #311658 115.55%)' }}
-                        >
-                            Build Your Digital Future Now
-                            <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-                            </svg>
-                        </a>
-                    </div>
+                    <a
+                        href="#"
+                        className="inline-block bg-gradient-to-r from-[#7214FF] to-[#311658] text-white text-center font-medium py-3.5 px-6 rounded-[56px] transition-all opacity-100 hover:opacity-90"
+                        style={{
+                            width: '527px',
+                            height: '96px',
+                            top: '676px',
+                            left: '60px',
+                            padding: '24px 62px',
+                            gap: '0px',
+                        }}
+                    >
+                        <span className="font-Tajawal text-[32px] leading-[38.4px]">{/* نص الزر */}Build Your Digital Future Now</span>
+                    </a>
                 </div>
 
-                {/* الصورة */}
-                <div className="hidden md:block md:w-5/12">
-                    <img className="w-full h-auto object-cover rounded-[56px_0_0_0]" src={Heroimage} alt="mockup" />
-                </div>
+            </div>
+
+            {/* الصورة */}
+            <div className="hidden md:block md:w-5/12">
+                <img className="w-full h-auto object-cover rounded-[56px_0_0_0]" src={Heroimage} alt="mockup" />
             </div>
         </div>
+
     );
 };
 
