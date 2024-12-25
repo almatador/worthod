@@ -68,7 +68,7 @@ const AppLayoutHomePage = () => (
     <Navbar />
 
     {/* Main Content Area */}
-    <div className="flex-grow z-10 p-5 max-w-screen-xl w-full mx-auto">
+    <div className="flex-grow z-10  max-">
       <Outlet />
     </div>
 

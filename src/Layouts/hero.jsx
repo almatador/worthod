@@ -2,7 +2,7 @@ import Heroimage from './../../public/assets/Images/hero.png'; // استيراد
 
 const Hero = () => {
     return (
-        <div className="w-full h-screen flex items-center justify-center">
+        <div className="w-full h-screen flex items-center justify-center p"> {/* أضف pt-16 هنا */}
             <div className="max-w-screen-xl w-full px-4 py-6 mx-auto flex flex-col-reverse md:flex-row items-center justify-between space-y-6 md:space-y-0">
                 {/* النص والمحتوى الرئيسي */}
                 <div className="w-full md:w-7/12 text-center md:text-left">

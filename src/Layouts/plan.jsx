@@ -55,13 +55,20 @@ const Pricing = () => {
                         Advanced E-Commerce Platforms, Ensuring Your Digital Success
                     </p>
                     {/* Billing Toggle */}
-                    <div className="flex justify-center items-center space-x-4">
-                        <label className="text-xl">Pay Monthly</label>
-                        <input type="checkbox" id="billing-toggle" className="relative shrink-0 w-11 h-6 p-0.5 bg-indigo-100 checked:bg-indigo-100 rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:border-blue-600 appearance-none before:inline-block before:w-5 before:h-5 before:bg-indigo-600 checked:before:bg-indigo-600 before:translate-x-0 checked:before:translate-x-full before:shadow before:rounded-full before:transform before:transition before:ease-in-out before:duration-200" />
-
-                        <label className="text-xl">Pay Yearly</label>
-                        <img src="./../../public/assets/Images/image.png" alt="" />
-                        <span className="text-indigo-400 ">Save 10%</span>
+                    <div className="flex justify-center items-center space-x-4 sm:space-x-2 flex-col sm:flex-row">
+                        <label className="text-xl sm:text-lg">Pay Monthly</label>
+                        <input
+                            type="checkbox"
+                            id="billing-toggle"
+                            className="relative shrink-0 w-11 h-6 p-0.5 bg-indigo-100 checked:bg-indigo-100 rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:border-blue-600 appearance-none before:inline-block before:w-5 before:h-5 before:bg-indigo-600 checked:before:bg-indigo-600 before:translate-x-0 checked:before:translate-x-full before:shadow before:rounded-full before:transform before:transition before:ease-in-out before:duration-200"
+                        />
+                        <label className="text-xl sm:text-lg">Pay Yearly</label>
+                        <img
+                            src="./../../public/assets/Images/image.png"
+                            alt=""
+                            className="max-w-full h-auto mt-2 sm:mt-0"
+                        />
+                        <span className="text-indigo-400 text-sm sm:text-base">Save 10%</span>
                     </div>
                 </div>
 
@@ -80,8 +87,8 @@ const Pricing = () => {
                             </div>
                             <button
                                 className={`w-50 h-[48px] py-[6px] px-[12px] gap-[4px] border-[1.5px] rounded-[56px] font-semibold transition ${index === 1
-                                        ? "bg-white text-[#190930] hover:bg-indigo-700"
-                                        : "bg-[#190930] hover:bg-indigo-600"
+                                    ? "bg-white text-[#190930] hover:bg-indigo-700"
+                                    : "bg-[#190930] hover:bg-indigo-600"
                                     }`}
                             >
                                 Get Started Now
