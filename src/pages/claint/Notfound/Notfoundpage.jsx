@@ -1,18 +1,35 @@
 import React from 'react';
+import Logo from './../../../../public/assets/Images/logo.png'; // Import your logo image
 
 const NotFoundPage = () => {
-       return (
-              <>
-                     <section className="bg-white h-[100vh] flex justify-center">
-                            <div className="m-auto max-w-screen-xl">
-                                   <div className="mx-auto max-w-screen text-center">
-                                          <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-[#D01025]">404</h1>
-                                          <p className="ltr mb-4 text-3xl tracking-tight font-bold  md:text-4xl">Not Found Page</p>
-                                   </div>
-                            </div>
-                     </section>
-              </>
-       )
-}
+  return (
+    <>
+      <section className="bg-gradient-to-r from-[#120C1C] to-[#2A1845] h-[100vh] flex justify-center items-center">
+        <div className="max-w-screen-xl text-center">
+          {/* Logo */}
+          <div className="flex justify-center mb-8">
+            <a href="/" className="flex items-center">
+              <img
+                src={Logo}
+                alt="Logo"
+                className="h-10 sm:h-12 lg:h-14 cursor-pointer transition-transform duration-300 hover:scale-110"
+              />
+            </a>
+          </div>
 
-export default NotFoundPage
+          {/* 404 Heading */}
+          <h1 className="mb-4 text-7xl tracking-tight font-extrabold text-white lg:text-9xl">
+            404
+          </h1>
+
+          {/* Not Found Message */}
+          <p className="mb-4 text-3xl tracking-tight font-bold text-gray-300 md:text-4xl">
+            Page Not Found
+          </p>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default NotFoundPage;
