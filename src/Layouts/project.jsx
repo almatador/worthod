@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import projectpng from './../../public/assets/Images/profile.jpg';
+import React, { useState } from "react";
+import projectpng from "./../../public/assets/Images/profile.jpg";
 
 const projects = [
     {
@@ -8,6 +8,34 @@ const projects = [
         price: "$110.00",
         image: projectpng,
         link: "https://link-to-project1.com",
+    },
+    {
+        title: "مشروع 2",
+        description: "وصف قصير للمشروع 2.",
+        price: "$150.00",
+        image: projectpng,
+        link: "https://link-to-project2.com",
+    },
+    {
+        title: "مشروع 2",
+        description: "وصف قصير للمشروع 2.",
+        price: "$150.00",
+        image: projectpng,
+        link: "https://link-to-project2.com",
+    },
+    {
+        title: "مشروع 2",
+        description: "وصف قصير للمشروع 2.",
+        price: "$150.00",
+        image: projectpng,
+        link: "https://link-to-project2.com",
+    },
+    {
+        title: "مشروع 2",
+        description: "وصف قصير للمشروع 2.",
+        price: "$150.00",
+        image: projectpng,
+        link: "https://link-to-project2.com",
     },
     {
         title: "مشروع 2",
@@ -26,38 +54,47 @@ const Project = () => {
     const handleLike = (index) => {
         setLikedProjects((prev) => ({
             ...prev,
-            [index]: !prev[index] // Toggle like status
+            [index]: !prev[index], // Toggle like status
         }));
     };
 
     return (
-        <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
-            <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
+        <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8  text-white">
+            <div className="text-left mb-8">
+                <h1 className="text-3xl font-semibold">Our Work</h1>
+                <p className="text-sm mt-2">
+                    Explore Our Expertly Crafted Projects That Showcase Innovation, Quality, And Results-Driven Digital Solutions Tailored For Business Success
+                </p>
+            </div>
+            <div
+                className="scroll-ps-6 snap-x max-w-7xl mx-auto grid grid-flow-col auto-cols-[minmax(300px,1fr)] gap-6 overflow-x-auto overflow-y-hidden"
+                dir="ltr"
+            >
                 {projects.map((project, index) => (
-                    <div key={index} className="relative flex flex-col rounded-lg bg-white shadow-md p-3">
-                        <h1 className="mt-1 text-lg font-semibold text-slate-900">{project.title}</h1>
-                        <p className="text-sm leading-4 font-medium text-slate-500">{project.description}</p>
-                        <div className="grid gap-4">
-                            <img src={project.image} alt={project.title} className="w-full h-60 object-cover rounded-lg" loading="lazy" />
-                        </div>
-                        <div className="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
-                            <div className="text-lg font-semibold text-slate-500">{project.price}</div>
-                            <div className="w-full flex-none text-sm font-medium text-slate-700 mt-2">In stock</div>
-                        </div>
-                        <div className="flex space-x-4 mb-6 text-sm font-medium">
-                            <button className="h-10 px-6 font-semibold rounded-md bg-black text-white" type="button" onClick={() => window.open(project.link, "_blank")}>
-                                عرض المشروع
-                            </button>
+                    <div
+                        key={index}
+                        className="relative flex flex-col rounded-[56px] bg-white text-black shadow-lg p-4 transform hover:scale-105 transition-transform duration-300"
+                    >
+                        <img
+                            src={project.image}
+                            alt={project.title}
+                            className="w-full h-40 object-cover rounded-md"
+                            loading="lazy"
+                        />
+                        <h2 className="mt-4 text-lg font-semibold">{project.title}</h2>
+                        <p className="text-sm text-gray-600">{project.description}</p>
+                        <div className="mt-4 flex justify-between items-center">
+                            <span className="text-lg font-bold">{project.price}</span>
                             <button
-                                className="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200"
-                                type="button"
+                                className={`flex items-center justify-center w-9 h-9 rounded-full ${likedProjects[index] ? "bg-yellow-500" : "bg-gray-300"
+                                    }`}
+                                onClick={() => handleLike(index)}
                                 aria-label="Like"
-                                onClick={() => handleLike(index)} // Call handleLike on click
                             >
                                 <svg
                                     width="20"
                                     height="20"
-                                    fill={likedProjects[index] ? "yellow" : "currentColor"} // Change color based on like status
+                                    fill={likedProjects[index] ? "white" : "currentColor"}
                                     aria-hidden="true"
                                 >
                                     <path
@@ -68,8 +105,20 @@ const Project = () => {
                                 </svg>
                             </button>
                         </div>
+                        <button
+                            className="mt-4 h-10 px-6 font-semibold rounded-[56px] bg-purple-700 text-white hover:bg-purple-800 transition"
+                            onClick={() => window.open(project.link, "_blank")}
+                        >
+                            عرض المشروع
+                        </button>
                     </div>
                 ))}
+            </div>
+
+            <div className="text-left mt-10">
+                <button className="px-8 py-3 text-lg font-semibold rounded-full bg-gradient-to-r from-purple-500 to-purple-700 text-white hover:from-purple-600 hover:to-purple-800 transition">
+                    View More
+                </button>
             </div>
         </main>
     );

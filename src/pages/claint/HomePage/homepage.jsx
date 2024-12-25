@@ -4,10 +4,10 @@ import Project from '../../../Layouts/project';
 import Services from '../../../Layouts/servies';
 import Pricing from '../../../Layouts/plan';
 import Services2 from '../../../Layouts/servies2';
-
+import Update from '../../../Layouts/updeta';
 const Homepage = () => {
     return (
-        <div>
+        <div className='container mx-auto px-4'>
             <Hero />
             <div className='my-20'></div> {/* مسافة 200 بيكسل */}
             <Services />
@@ -17,6 +17,8 @@ const Homepage = () => {
             <Project />
             <div className='my-20'></div> {/* مسافة 200 بيكسل */}
             <Pricing />
+            <div className='my-20'></div> {/* مسافة 200 بيكسل */}
+            <Update />
         </div>
     );
 };
