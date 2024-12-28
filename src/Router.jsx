@@ -63,12 +63,12 @@ import Footer from "./Layouts/footer";
 
 // Layout component that includes the Navbar, Outlet for nested routes, and Footer
 const AppLayoutHomePage = () => (
-  <div className="min-h-screen flex flex-col bg-gradient-to-r from-[#120C1C] to-[#2A1845]">
+  <div className=" flex flex-col bg-gradient-to-r from-[#120C1C] to-[#2A1845]">
     {/* Navbar */}
     <Navbar />
 
     {/* Main Content Area */}
-    <div className="flex-grow z-10  max-">
+    <div className="  ">
       <Outlet />
     </div>
 

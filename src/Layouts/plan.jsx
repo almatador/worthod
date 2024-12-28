@@ -64,7 +64,7 @@ const Pricing = () => {
                         />
                         <label className="text-xl sm:text-lg">Pay Yearly</label>
                         <img
-                            src="./../../public/assets/Images/image.png"
+                            src="./../../public/assets/Images/share.png"
                             alt=""
                             className="max-w-full h-auto mt-2 sm:mt-0"
                         />
@@ -123,5 +123,4 @@ const Pricing = () => {
         </section>
     );
 };
-
 export default Pricing;

@@ -80,6 +80,8 @@ import Web from './../../public/assets/Images/Web Hosting.png';
 import SEO from './../../public/assets/Images/SEO Optimization.png';
 import Dashboard from './../../public/assets/Images/Dashboard Design.png';
 import serviceimage from './../../public/assets/Images/service2.png';
+import Social_Media_Marketing from './../../public/assets/Images/Social Media Marketing.png';
+import Cybersecurity from './../../public/assets/Images/Cybersecurity\.png';
 
 const services = [
   {
@@ -105,6 +107,12 @@ const services = [
   {
     icon: Dashboard,
     text: "Dashboard Design",
+  },{
+    icon: Social_Media_Marketing,
+    text: "Social Media Marketing",
+  },{
+    icon: Cybersecurity,
+    text: "Cybersecurity",
   },
 ];
 
