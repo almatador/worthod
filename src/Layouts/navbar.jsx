@@ -105,22 +105,41 @@
 // };
 
 // export default Navbar;
-import React, { useState, useEffect } from 'react';
-import Logo from './../../public/assets/Images/logo.png'; // Import your logo image
-import IconLang from './../Components/icon/iconlang'; // Import your icon
+import React, { useState, useEffect } from "react";
+import Logo from "./../../public/assets/Images/logo.png"; // Import your logo image
+import IconLang from "./../Components/icon/iconlang"; // Import your icon
+import { useLanguage } from "./../contnt/LanguageContext";
+
+const translations = {
+    en: {
+        home: "Home",
+        about: "About",
+        services: "Services",
+        packages: "Packages",
+        portfolio: "Portfolio",
+        contact: "Contact",
+        start_now: "Start Now",
+    },
+    ar: {
+        home: "الرئيسية",
+        about: "من نحن",
+        services: "الخدمات",
+        packages: "الباقات",
+        portfolio: "الأعمال",
+        contact: "اتصل بنا",
+        start_now: "ابدأ الآن",
+    },
+};
 
 const Navbar = () => {
-    const [language, setLanguage] = useState('en'); // Default language is English
     const [menuOpen, setMenuOpen] = useState(false); // Sidebar state
     const [navbarHeight, setNavbarHeight] = useState(0); // Dynamic navbar height
+    const { toggleLanguage, language } = useLanguage();
 
-    const toggleLanguage = () => {
-        setLanguage(prevLanguage => (prevLanguage === 'en' ? 'ar' : 'en')); // Toggle between English and Arabic
-    };
+    const t = translations[language]; // Get the current translations
 
-    // Adjust navbar height dynamically based on content
     useEffect(() => {
-        const navbar = document.querySelector('nav');
+        const navbar = document.querySelector("nav");
         setNavbarHeight(navbar.offsetHeight);
     }, [menuOpen]);
 
@@ -148,49 +167,24 @@ const Navbar = () => {
                     </button>
                     {menuOpen && (
                         <ul className="absolute top-16 left-0 right-0 bg-gradient-to-r from-[#120C1C] to-[#3c255e] p-4 space-y-4 text-white text-lg">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/services">Services</a></li>
-                            <li><a href="/packages">Packages</a></li>
-                            <li><a href="/portfolio">Portfolio</a></li>
-                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="/">{t.home}</a></li>
+                            <li><a href="/about">{t.about}</a></li>
+                            <li><a href="/services">{t.services}</a></li>
+                            <li><a href="/packages">{t.packages}</a></li>
+                            <li><a href="/portfolio">{t.portfolio}</a></li>
+                            <li><a href="/contact">{t.contact}</a></li>
                         </ul>
                     )}
                 </div>
 
                 {/* Main menu for larger screens */}
                 <ul className="hidden sm:flex flex-wrap space-x-4 sm:space-x-6 lg:space-x-10 text-white text-sm sm:text-lg lg:text-2xl">
-                    <li className="relative group">
-                        <a href="/" className="transition-transform duration-300 hover:scale-150">
-                            Home
-                        </a>
-                        <span className="absolute left-0 w-0 h-1 bg-white transition-all group-hover:w-full bottom-0"></span>
-                    </li>
-                    <li>
-                        <a href="/about" className="relative group transition-transform duration-300 hover:scale-150">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/services" className="relative group transition-transform duration-300 hover:scale-150">
-                            Services
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/packages" className="relative group transition-transform duration-300 hover:scale-150">
-                            Packages
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/portfolio" className="relative group transition-transform duration-300 hover:scale-150">
-                            Portfolio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/contact" className="relative group transition-transform duration-300 hover:scale-150">
-                            Contact
-                        </a>
-                    </li>
+                    <li><a href="/" className="transition-transform duration-300 hover:scale-150">{t.home}</a></li>
+                    <li><a href="/about" className="transition-transform duration-300 hover:scale-150">{t.about}</a></li>
+                    <li><a href="/services" className="transition-transform duration-300 hover:scale-150">{t.services}</a></li>
+                    <li><a href="/packages" className="transition-transform duration-300 hover:scale-150">{t.packages}</a></li>
+                    <li><a href="/portfolio" className="transition-transform duration-300 hover:scale-150">{t.portfolio}</a></li>
+                    <li><a href="/contact" className="transition-transform duration-300 hover:scale-150">{t.contact}</a></li>
                 </ul>
 
                 {/* Buttons */}
@@ -202,7 +196,7 @@ const Navbar = () => {
 
                     {/* Language text */}
                     <div className="text-white text-sm sm:text-lg cursor-pointer" onClick={toggleLanguage}>
-                        {language === 'en' ? 'AR' : 'EN'}
+                        {language === "en" ? "AR" : "EN"}
                     </div>
 
                     {/* "Start Now" button */}
@@ -210,7 +204,7 @@ const Navbar = () => {
                         href="/start"
                         className="px-4 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white text-sm sm:text-lg rounded-full shadow-md hover:opacity-90 transition-transform duration-300 hover:scale-110"
                     >
-                        Start Now
+                        {t.start_now}
                     </a>
                 </div>
             </nav>

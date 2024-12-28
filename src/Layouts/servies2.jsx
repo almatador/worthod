@@ -81,47 +81,74 @@ import SEO from './../../public/assets/Images/SEO Optimization.png';
 import Dashboard from './../../public/assets/Images/Dashboard Design.png';
 import serviceimage from './../../public/assets/Images/service2.png';
 import Social_Media_Marketing from './../../public/assets/Images/Social Media Marketing.png';
-import Cybersecurity from './../../public/assets/Images/Cybersecurity\.png';
+import Cybersecurity from './../../public/assets/Images/Cybersecurity.png';
 
+// Define services with multi-language support (English/Arabic)
 const services = [
   {
     icon: Designing,
-    text: "Designing Website store",
+    text: {
+      en: "Designing Website store",
+      ar: "تصميم متجر مواقع الويب",
+    },
   },
   {
     icon: Website,
-    text: "Website Design",
+    text: {
+      en: "Website Design",
+      ar: "تصميم المواقع الإلكترونية",
+    },
   },
   {
     icon: Application,
-    text: "Application Design",
+    text: {
+      en: "Application Design",
+      ar: "تصميم التطبيقات",
+    },
   },
   {
     icon: Web,
-    text: "Web Hosting",
+    text: {
+      en: "Web Hosting",
+      ar: "استضافة المواقع الإلكترونية",
+    },
   },
   {
     icon: SEO,
-    text: "SEO Optimization",
+    text: {
+      en: "SEO Optimization",
+      ar: "تحسين محركات البحث",
+    },
   },
   {
     icon: Dashboard,
-    text: "Dashboard Design",
-  },{
+    text: {
+      en: "Dashboard Design",
+      ar: "تصميم لوحة القيادة",
+    },
+  },
+  {
     icon: Social_Media_Marketing,
-    text: "Social Media Marketing",
-  },{
+    text: {
+      en: "Social Media Marketing",
+      ar: "التسويق عبر وسائل التواصل الاجتماعي",
+    },
+  },
+  {
     icon: Cybersecurity,
-    text: "Cybersecurity",
+    text: {
+      en: "Cybersecurity",
+      ar: "الأمن السيبراني",
+    },
   },
 ];
 
-const Services2 = () => {
+const Services2 = ({ language = 'en' }) => {
   return (
-    <div className="py-10 flex flex-col items-center justify-center">
+    <div className={`py-10 flex flex-col items-center justify-center ${language === 'ar' ? 'text-right' : 'text-left'}`}>
       <div className="container mx-auto justify-between">
         <h1 className="text-4xl font-Tajawal mb-10 text-center text-gray-100">
-          What Do We Offer?
+          {language === 'ar' ? "ماذا نقدم؟" : "What Do We Offer?"}
         </h1>
         <div className="flex flex-col-reverse lg:flex-row items-center lg:items-center gap-8">
           {/* الخدمات على الجانب الأيمن */}
@@ -131,7 +158,7 @@ const Services2 = () => {
                 key={index}
                 className="bg-white p-6 rounded-[20px] shadow-lg flex flex-col items-center"
               >
-                <ViewServices icon={service.icon} text={service.text} size="140px" />
+                <ViewServices icon={service.icon} text={service.text[language]} size="140px" />
               </div>
             ))}
           </div>

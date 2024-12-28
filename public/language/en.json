@@ -1,10 +1,110 @@
 {
-    "welcome": "Welcome",
-    "about": "About",
-    "contact": "Contact",
-    "service_title": "Our Services",
-    "pay_monthly": "Pay Monthly",
-    "pay_yearly": "Pay Yearly",
-    "save_10_percent": "Save 10%"
-  }
-  
+  "welcome": "Welcome",
+  "about": "About",
+  "contact": "Contact",
+  "service_title": "Our Services",
+  "save_10_percent": "Save 10%",
+  "title_hero": "Worthod – Your Partner in Building a Digital Future with Confidence and Creativity",
+  "descrabithan_hero": "Towards sustainable digital success with confidenceand innovation.",
+  "descrabithan_hero2": "At Worthod, we create responsive websites, innovative applications, and tailored e-commerce platforms to meet your business needs. With a focus on quality and innovation, we help businesses strengthen their digital presence and achieve lasting success. Start your journey today with our trusted digital solutions.",
+  "button_hero": "Build your digital future now",
+  "servies_titel": "Comprehensive digital solutions to turn your idea into exceptional success.",
+  "servies_descrabithan":"We transform your idea into a complete digital success through professional services that begin with thorough analysis and planning, followed by bespoke design and innovative development, culminating in digital marketing and ongoing support to achieve your goals easily and effectively.",
+  "servies_card_titel1":"Design and Customization",
+  "servies_card_descrabithan1":"We design innovative solutions that include graphic design, motion graphics, and responsive user interfaces (UI/UX). We are committed to providing an exceptional user experience that reflects your brand identity and enhances your audience's engagement with your services.",
+  "servies_card_titel2":"Analysis and Planning",
+  "servies_card_descrabithan2":"We start your project with a thorough analysis of your needs and goals through detailed discussions. We develop a customised strategy based on SMART objectives to achieve digital success that meets market needs and accurately targets your audience.",
+  "servies_card_titel3":"Marketing and Ongoing Support",
+  "servies_card_descrabithan3":"We offer comprehensive marketing services that include content writing, video and reel design, and search engine optimisation (SEO) to ensure your website appears effectively. Additionally, we provide ongoing technical support and prepare regular reports to improve performance and track your objectives.",
+  "servies_card_titel4":"Development and Implementation",
+  "servies_card_descrabithan4":"We develop websites and custom applications using the latest technologies, along with advanced dashboards for easy management of your business. We also provide cybersecurity services to protect your data and ensure stable and secure operation of your project.",
+  "servies2_titel":"What do we offer?",
+  "servies2_card_titel1":"E-commerce Store",
+  "servies2_card_titel2":"Websites",
+  "servies2_card_titel3":"Applications",
+  "servies2_card_titel4":"Social Media Marketing",
+  "servies2_card_titel5":"Web Hosting",
+  "servies2_card_titel6":"Search Engine Optimisation",
+  "servies2_card_titel7":"Control Panel",
+  "servies2_card_titel8":"Cybersecurity",
+  "project_titel":"Our Works",
+  "project_descrabithan":"Explore our professionally designed projects that showcase innovationw and quality, result-driven digital solutions crafted to achieve business success.",
+
+  "plan_titel":"For Your Digital Needs",
+  "plan_descrabithan":"Our Packages Are Designed To Fit Your Business Needs, From Simple Websites To Advanced E-Commerce Platforms, Ensuring Your Digital Success",
+  "pay_monthly": "Pay Monthly",
+  "pay_yearly": "Pay Yearly",
+  "plan1_titel":"Basic",
+  "plan1_pric_typy_Month":"/ Month",
+  "plan1_pric_typy_Yearly":"/ Yearly",
+  "plan1_buton":"Start now",
+  "plan1_features1":"Creation of a simple website (1-2 pages)",
+  "plan1_features2":"Design of a small e-commerce store (up to 10 products)",
+  "plan1_features3":"Basic SEO to ensure website visibility",
+  "plan1_features4":"Responsive design that works perfectly on all devices",
+  "plan1_features5":"1 month of technical support",
+  "plan1_features6":"Basic design customization to match your brand identity",
+  "plan1_features7":"Free consultation session to understand client needs",
+  "plan2_titel":"Advanced",
+  "plan2_pric_typy_Month":"/ Month",
+  "plan2_pric_typy_Yearly":"/ Yearly",
+  "plan2_buton":"Start now",
+  "plan2_features1":"Creation of a multi-page website (3-7 pages)",
+  "plan2_features2":"Design of a medium-sized e-commerce store (up to 50 products)",
+  "plan2_features3":"Advanced SEO with monthly reports",
+  "plan2_features4":"Content writing for three main pages",
+  "plan2_features5":"Integration of payment and shipping systems",
+  "plan2_features6":"3 months of technical support",
+  "plan2_features7":"Consultation session before the project to define goals",
+  "plan3_titel":"Advanced",
+  "plan3_pric_typy_Month":"/ Month",
+  "plan3_pric_typy_Yearly":"/ Yearly",
+  "plan3_buton":"Start now",
+  "plan3_features1":"Design of a complete website with advanced features and unlimited pages",
+  "plan3_features2":"Design of a large e-commerce store with an unlimited number of products",
+  "plan3_features3":"Comprehensive SEO with targeted keywords and detailed reports",
+  "plan3_features4":"Professional content writing for all pages",
+  "plan3_features5":"Creation of a custom Dashboard to manage the site and store",
+  "plan3_features6":"1 year of dedicated technical support",
+  "plan3_features7":"Free hosting for the first year",
+  "plan3_features8":"Free hosting for the first year",
+  "plan3_features9":"Personalized consultation sessions for implementation and needs analysis",
+  "Update_titel":"Stay Updated With Our Latest Tech News And Updates",
+  "Update_descrabthon":"Discover Our Latest Projects And Innovative Digital Services Designed To Drive Your Success. Stay Informed With Our Most Recent Developments.",
+  "Update_card1":"The importance of developing applications and websites for Gulf companies in the digital age",          
+  "Update_card2":"The best marketing strategies through social media for Gulf companies",          
+  "Update_card3":"How to improve user experience in the Gulf market: strategies and tools",          
+  "Contct_titel1":"Get in Touch with Us Today",
+  "Contct1_descrabtion":"Have questions or need assistance? Fill out the form below, and we’ll get back to you promptly",
+  "Contct1_input_Full Name":"Full Name:",           
+  "Contct1_input_Email Address":"Email Address:",           
+  "Contct1_input_Phone Number":"Phone Number:",           
+  "Contct1_input_Message":"Message:",           
+  "Contct1_button":"Send Your Message Now",            
+  "Contct2_titel1":"Contact Us Anytime",
+  "Contct2_descrabtion1":"Connect with us via phone, WhatsApp, or email. We're here to help your business grow.",           
+  "Contct2_titel2":"Connect with Us on Social Media",
+  "Contct2_descrabtion2":"Stay updated with our latest projects, services, and exclusive offers by following us on our social media channels. Let's build a stronger connection today!"           
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
