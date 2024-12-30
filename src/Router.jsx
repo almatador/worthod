@@ -58,6 +58,9 @@ import About from './pages/claint/About/AboutPage';
 import Contact from './pages/claint/Contact/Contactpage';
 import NotFound from './pages/claint/Notfound/Notfoundpage';
 import Services from './pages/claint/servies/serviespage';
+import Improve from './pages/claint/improve/improvepage';
+import Marketing from './pages/claint/marketing/marketingpage';
+import Websites from './pages/claint/websites/websitespage';
 import Navbar from "./Layouts/navbar";
 import Footer from "./Layouts/footer";
 
@@ -87,8 +90,16 @@ export const router = createBrowserRouter([
         element: <Homepage />, // HomePage component
       },
       {
-        path: "about",
-        element: <About />, // AboutPage component
+        path: "Websites",
+        element: <Websites />, // AboutPage component
+      },
+      {
+        path: "marketing",
+        element: <Marketing />, // AboutPage component
+      },
+      {
+        path: "Improve",
+        element: <Improve />, // AboutPage component
       },
       {
         path: "contact",
