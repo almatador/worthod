@@ -15,7 +15,7 @@ const Marketing = () => {
                     className="w-[500px] h-auto object-contain mb-8" // ضبط حجم الصورة
                 />
             </div>
-            <div className={`mt-6 ${language === "ar" ? "text-right" : "text-left"} ${language === "ar" ? "rtl" : "ltr"} max-w-1xl`}>
+            <div     className={`mt-6 ${language === "ar" ? "text-right" : "text-left"} ${language === "ar" ? "rtl" : "ltr"} max-w-1xl`}>
                 <h1 className="text-3xl font-Tajawal text-[#FFFFFF] mb-6">
                     {language === "ar"
                         ? "أفضل استراتيجيات التسويق عبر وسائل التواصل الاجتماعي للشركات الخليجية"
